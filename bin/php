@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+set -euo pipefail
+if [[ -n "${EPITA_PHP:-}" ]]; then
+  epita_php="$EPITA_PHP"
+elif [[ -x "$(dirname "$0")/../.runtime/php84" ]]; then
+  epita_php="$(dirname "$0")/../.runtime/php84"
+elif command -v php84 >/dev/null 2>&1; then
+  epita_php="$(command -v php84)"
+else
+  epita_php="$(command -v php)"
+fi
+if ! "$epita_php" -r 'exit(PHP_MAJOR_VERSION === 8 && PHP_MINOR_VERSION === 4 && version_compare(PHP_VERSION, "8.4.27", ">=") ? 0 : 1);'; then
+  echo 'EPITA memerlukan PHP 8.4.27 atau patch PHP 8.4 yang lebih baru. Set EPITA_PHP ke binary yang sesuai.' >&2
+  exit 1
+fi
+exec "$epita_php" "$@"

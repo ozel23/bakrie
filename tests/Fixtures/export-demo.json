@@ -1,0 +1,280 @@
+{
+  "equipment": [
+    {
+      "uuid": "eq-0",
+      "code": "DEMO-001",
+      "name": "Kendaraan demonstrasi",
+      "model": "Model demonstrasi",
+      "category": "vehicle",
+      "plate": "DEMO"
+    },
+    {
+      "uuid": "eq-1",
+      "code": "DEMO-002",
+      "name": "Alat berat demonstrasi",
+      "model": "Model demonstrasi",
+      "category": "heavy_equipment",
+      "plate": null
+    },
+    {
+      "uuid": "eq-2",
+      "code": "DEMO-003",
+      "name": "Mesin Yanmar demonstrasi",
+      "model": "Model demonstrasi",
+      "category": "engine",
+      "plate": null
+    },
+    {
+      "uuid": "eq-3",
+      "code": "DEMO-004",
+      "name": "Genset 60 kVA demonstrasi",
+      "model": "Model demonstrasi",
+      "category": "genset",
+      "plate": null
+    }
+  ],
+  "people": [
+    {
+      "uuid": "op",
+      "name": "Operator demonstrasi"
+    }
+  ],
+  "locations": [
+    {
+      "uuid": "loc",
+      "name": "Lokasi demonstrasi",
+      "code": "DEMO-LOC",
+      "type": "workshop",
+      "sap_code": null
+    }
+  ],
+  "reports": [
+    {
+      "uuid": "report-0",
+      "equipment_uuid": "eq-0",
+      "operator_uuid": "op",
+      "work_date": "2026-10-01",
+      "shift": "utama",
+      "status": "approved",
+      "condition": "working",
+      "meter_start": "10023",
+      "meter_end": "10030",
+      "meter_delta": "7",
+      "meter_unit": "KM",
+      "work_seconds": 25200,
+      "notes": "Data demo.",
+      "activities": [
+        {
+          "starts_at": "2026-10-01T07:00:00+07:00",
+          "ends_at": "2026-10-01T09:00:00+07:00",
+          "break_seconds": 0,
+          "description": "Aktivitas sintetis untuk pengujian format",
+          "location_uuid": "loc",
+          "work_code": "050",
+          "quantity": "110",
+          "unit": "M",
+          "meter_start": "10023",
+          "meter_end": "10025",
+          "cargo": "Material demo",
+          "origin": "Lokasi demo A",
+          "destination": "Lokasi demo B"
+        },
+        {
+          "starts_at": "2026-10-01T13:00:00+07:00",
+          "ends_at": "2026-10-01T18:00:00+07:00",
+          "break_seconds": 0,
+          "description": "Sesi sore sintetis",
+          "location_uuid": "loc",
+          "work_code": "050",
+          "quantity": "200",
+          "unit": "KG",
+          "meter_start": "10025",
+          "meter_end": "10030",
+          "cargo": "Material demo",
+          "origin": "Lokasi demo B",
+          "destination": "Lokasi demo A"
+        }
+      ],
+      "fuel_events": [
+        {
+          "uuid": "fuel-0",
+          "meaning": "receipt",
+          "fuel_type": "Solar",
+          "quantity": "20",
+          "unit": "L",
+          "method": "direct",
+          "place": "Tangki demonstrasi",
+          "verified_at": "2026-10-01T18:00:00Z"
+        }
+      ],
+      "helpers": [],
+      "overtime_minutes": 60
+    },
+    {
+      "uuid": "report-1",
+      "equipment_uuid": "eq-1",
+      "operator_uuid": "op",
+      "work_date": "2026-10-01",
+      "shift": "utama",
+      "status": "approved",
+      "condition": "working",
+      "meter_start": "10023",
+      "meter_end": "10030",
+      "meter_delta": "7",
+      "meter_unit": "HM",
+      "work_seconds": 25200,
+      "notes": "Data demo.",
+      "activities": [
+        {
+          "starts_at": "2026-10-01T07:00:00+07:00",
+          "ends_at": "2026-10-01T09:00:00+07:00",
+          "break_seconds": 0,
+          "description": "Aktivitas sintetis untuk pengujian format",
+          "location_uuid": "loc",
+          "work_code": "050",
+          "quantity": "110",
+          "unit": "M",
+          "meter_start": "10023",
+          "meter_end": "10025",
+          "cargo": "Material demo",
+          "origin": "Lokasi demo A",
+          "destination": "Lokasi demo B"
+        },
+        {
+          "starts_at": "2026-10-01T13:00:00+07:00",
+          "ends_at": "2026-10-01T18:00:00+07:00",
+          "break_seconds": 0,
+          "description": "Sesi sore sintetis",
+          "location_uuid": "loc",
+          "work_code": "050",
+          "quantity": "200",
+          "unit": "KG",
+          "meter_start": "10025",
+          "meter_end": "10030",
+          "cargo": "Material demo",
+          "origin": "Lokasi demo B",
+          "destination": "Lokasi demo A"
+        }
+      ],
+      "fuel_events": [
+        {
+          "uuid": "fuel-1",
+          "meaning": "consumption",
+          "fuel_type": "Solar",
+          "quantity": "20",
+          "unit": "L",
+          "method": "direct",
+          "place": "Tangki demonstrasi",
+          "verified_at": "2026-10-01T18:00:00Z"
+        }
+      ],
+      "helpers": [],
+      "overtime_minutes": 60
+    },
+    {
+      "uuid": "report-2",
+      "equipment_uuid": "eq-2",
+      "operator_uuid": "op",
+      "work_date": "2026-10-01",
+      "shift": "utama",
+      "status": "approved",
+      "condition": "working",
+      "meter_start": "10023",
+      "meter_end": "10030",
+      "meter_delta": "7",
+      "meter_unit": "HM",
+      "work_seconds": 25200,
+      "notes": "Data demo.",
+      "activities": [
+        {
+          "starts_at": "2026-10-01T07:00:00+07:00",
+          "ends_at": "2026-10-01T09:00:00+07:00",
+          "break_seconds": 0,
+          "description": "Aktivitas sintetis untuk pengujian format",
+          "location_uuid": "loc",
+          "work_code": "050",
+          "quantity": "110",
+          "unit": "M",
+          "meter_start": "10023",
+          "meter_end": "10025",
+          "cargo": "Material demo",
+          "origin": "Lokasi demo A",
+          "destination": "Lokasi demo B"
+        },
+        {
+          "starts_at": "2026-10-01T13:00:00+07:00",
+          "ends_at": "2026-10-01T18:00:00+07:00",
+          "break_seconds": 0,
+          "description": "Sesi sore sintetis",
+          "location_uuid": "loc",
+          "work_code": "050",
+          "quantity": "200",
+          "unit": "KG",
+          "meter_start": "10025",
+          "meter_end": "10030",
+          "cargo": "Material demo",
+          "origin": "Lokasi demo B",
+          "destination": "Lokasi demo A"
+        }
+      ],
+      "fuel_events": [
+        {
+          "uuid": "fuel-2",
+          "meaning": "consumption",
+          "fuel_type": "Solar",
+          "quantity": "20",
+          "unit": "L",
+          "method": "direct",
+          "place": "Tangki demonstrasi",
+          "verified_at": "2026-10-01T18:00:00Z"
+        }
+      ],
+      "helpers": [],
+      "overtime_minutes": 60
+    },
+    {
+      "uuid": "report-3",
+      "equipment_uuid": "eq-3",
+      "operator_uuid": "op",
+      "work_date": "2026-10-01",
+      "shift": "utama",
+      "status": "approved",
+      "condition": "working",
+      "meter_start": "10023",
+      "meter_end": "10023.167",
+      "meter_delta": "0.167",
+      "meter_unit": "HM",
+      "work_seconds": 600,
+      "notes": "Data demo.",
+      "activities": [
+        {
+          "starts_at": "2026-10-01T07:00:00+07:00",
+          "ends_at": "2026-10-01T07:10:00+07:00",
+          "break_seconds": 0,
+          "description": "Pemanasan demonstrasi: 10 menit",
+          "location_uuid": "loc",
+          "quantity": "",
+          "unit": ""
+        }
+      ],
+      "fuel_events": [
+        {
+          "uuid": "fuel-3",
+          "meaning": "consumption",
+          "fuel_type": "Solar",
+          "quantity": "0.417",
+          "unit": "L",
+          "method": "estimate",
+          "place": "Tangki demonstrasi",
+          "verified_at": "2026-10-01T18:00:00Z"
+        }
+      ],
+      "helpers": [],
+      "overtime_minutes": 60
+    }
+  ],
+  "plans": [],
+  "orders": [],
+  "breakdowns": [],
+  "imports": []
+}

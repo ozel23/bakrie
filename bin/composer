@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -euo pipefail
+epita_bin_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+exec "$epita_bin_dir/php" "$(command -v composer)" "$@"
